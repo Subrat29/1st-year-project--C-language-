@@ -1,0 +1,52 @@
+		login obj;
+		this->Hide();
+		obj.ShowDialog();
+
+
+	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+		if (textBox2password->Text == "1245")
+		{
+			MessageBox::Show("Login Succesfull");
+			home obj1;
+			this->Hide();
+			obj1.ShowDialog();
+		}
+		else
+		{
+			MessageBox::Show("Invalid Password");
+		}
+	}
+
+
+	Application::Exit();
+
+
+
+using namespace System;
+using namespace System::Windows::Forms;
+
+[STAThread]
+
+void main(array<String^>^ args) {
+	Application::EnableVisualStyles();
+	Application::SetCompatibleTextRenderingDefault(false);
+	YourAppNameHere::MyForm form;
+	Application::Run(%form);
+}
+
+
+
+#include "StartProject.h"
+#include"AddData.h"
+#include"adminVerify.h"
+#include"DeleteData.h"
+#include"mainMenu.h"
+#include"studentVerify.h"
+#include"WelcomeAdmin.h"
+#include"welcomeStudent.h"
+
+
+
+
+
+
